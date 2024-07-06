@@ -1,0 +1,238 @@
+*{
+	margin: 0;
+}
+
+body {
+	background-color: #525252;
+}
+
+@font-face {
+	font-family: 'headingFont';
+	src: url('Fonts/Mathlete-Bulky.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'buttonFont';
+	src: url('Fonts/Mathlete-Bulky.otf') format('opentype');
+}
+
+#container{
+	display: flex;
+	margin: 0 auto;
+	width: -webkit-max-content;           
+  	width: -moz-max-content;   
+ 	width: intrinsic;
+	height: 60%;
+}
+
+#b{
+	display: inline-block;
+	margin-left: 1vw;
+	width: 1vw;
+}
+
+#d{
+	display: inline-block;
+	margin-left: 1vw;
+	width: 1vw;
+}
+#bars, #delay{
+	vertical-align: middle;
+}
+
+.header{
+	display: flex;
+	flex-wrap: wrap;
+	font-weight: bold;
+	background-color: #313131;
+	margin: 0;
+	color: #CA3E47;
+	padding: 1vw 1vw 2vw 1vw;
+	margin-bottom: 2vw;
+}
+h1{
+	font-size: 5rem;
+	font-family: 'headingFont';
+	font-weight: lighter;
+	width: 25%;
+	text-align: left;
+}
+.range{
+	justify-content: space-evenly;
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: wrap;
+}
+.slide{
+	margin: 0vw 1vw;
+}
+.bar{
+	border: 0.05vw solid black;
+	width:0.6vw;
+	margin:0.1vw;
+	background-color: #fd0081;
+}
+.sorts{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.vars{
+	width: 60%;
+	align-self: flex-start;
+	text-align: center;
+	font-size: 1.3vw;
+	font-family: sans-serif;
+}
+
+.newArray {
+	background: #CA3E47;
+	border: none;
+	padding: 1.3vh;
+	border-radius: 9vw;
+	min-width: 8vw;
+	color: white;
+	font-family: 'buttonFont';
+	font-size: 2.5rem;
+	font-weight: 500;
+}
+
+input[type="button"] {
+	margin: 1.5vw 0.5vw;
+
+}
+input[type="button"]:hover, button:hover{
+	background-color: #f8a7a7;
+	cursor: pointer;
+	color: #CA3E47;
+}
+input[type="button"]:disabled, input[type="range"]:disabled{
+	background-color: #ffffff;
+	cursor: not-allowed;
+	color: #CA3E47;
+}
+input[type="button"]{
+	background: white;
+	border: none;
+	padding: 1.3vh;
+	border-radius: 9vw;
+	min-width: 8vw;
+	color: #CA3E47;
+	font-family: 'buttonFont';
+	font-size: 2.5rem;
+	font-weight: 500;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 200px;
+    background-color: transparent;
+
+    &:focus {
+      outline-color: #f8b195;
+    }
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 3px;
+    background: rgb(246, 114, 128);
+    background: -webkit-linear-gradient(
+      left,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    background: linear-gradient(
+      to right,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#f67280",
+      endColorstr="#355c7d",
+      GradientType=1
+    );
+  }
+
+  input[type="range"]::-moz-range-track {
+    -moz-appearance: none;
+    appearance: none;
+    height: 3px;
+    background: rgb(246, 114, 128);
+    background: -moz-linear-gradient(
+      left,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    background: linear-gradient(
+      to right,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#f67280",
+      endColorstr="#355c7d",
+      GradientType=1
+    );
+  }
+  
+  input[type="range"]::-ms-track {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 3px;
+    background: rgb(246, 114, 128);
+    background: -moz-linear-gradient(
+      left,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      left,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    background: linear-gradient(
+      to right,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#f67280",
+      endColorstr="#355c7d",
+      GradientType=1
+    );
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 2px solid #f8b195;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  bottom: 8px;
+  background: #222
+    url("http://codemenatalie.com/wp-content/uploads/2019/09/slider-thumb.png")
+    center no-repeat;
+  background-size: 50%;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
+  cursor: grab;
+    
+    &:active {
+      cursor: grabbing;
+    }
+}
+
+
